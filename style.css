@@ -1,0 +1,97 @@
+/* FONT & RESET */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a { text-decoration: none; }
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0; /* plus d’espace pour le logo */
+    background: linear-gradient(90deg, #1e3d59, #ff6e40);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo { display: flex; align-items: center; justify-content: center; }
+header .logo img { height: 70px; margin-right: 15px; } /* logo plus grand */
+header .logo h1 { font-size: 2.5em; }
+header nav { margin-top: 10px; }
+header nav a { margin: 0 15px; color: white; font-weight: 500; }
+
+/* ACCUEIL */
+#accueil {
+    background: linear-gradient(135deg, #ff6e40, #ff9e80);
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* réduit un peu pour centrer verticalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre vertical */
+    align-items: center;
+}
+
+#accueil h2.titre-accueil {
+    font-size: 2.7em;
+    margin-bottom: 20px;
+    color: #fff700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+#accueil .description {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.btn-principal {
+    margin-top: 20px;
+    background: #1e3d59;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* SERVICES */
+#services { padding: 80px 20px; text-align: center; background: #f4f4f4; }
+#services h2 { margin-bottom: 50px; font-size: 2em; color: #1e3d59; }
+.services-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.service {
+    background: white; padding: 30px; width: 300px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s;
+}
+.service:hover { transform: translateY(-5px); }
+.service h3 { color: #ff6e40; margin-bottom: 15px; }
+
+/* PREUVES / STATISTIQUES */
+#preuves { padding: 80px 20px; text-align: center; background: #fff3e0; }
+#preuves h2 { margin-bottom: 20px; font-size: 2em; color: #1e3d59; }
+.texte-preuves { max-width: 700px; margin: 0 auto 50px auto; font-size: 1.1em; color: #333; text-align: center; }
+.stats-container { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; }
+.stat h3 { font-size: 2.5em; color: #ff6e40; margin: 0; }
+.stat p { margin: 5px 0 0 0; }
+
+/* GALERIE */
+#galerie { padding: 80px 20px; text-align: center; }
+#galerie h2 { font-size: 2em; margin-bottom: 50px; color: #1e3d59; }
+.gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.gallery img { width: 400px; border-radius: 10px; }
+
+/* CONTACT */
+#contact { padding: 80px 20px; background: #f4f4f4; text-align: center; }
+#contact h2 { font-size: 2em; margin-bottom: 30px; color: #1e3d59; }
+.contact-info p a { color: #ff6e40; }
+form { margin-top: 30px; display: flex; flex-direction: column; align-items: center; }
+form input, form textarea { width: 80%; max-width: 500px; padding: 15px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+form button { padding: 15px 30px; border: none; border-radius: 5px; background: #1e3d59; color: white; font-weight: bold; cursor: pointer; margin-top: 10px; }
+
+/* FOOTER */
+footer { background: #1e3d59; color: white; padding: 20px 50px; display: flex; justify-content: flex-start; gap: 20px; flex-wrap: wrap; text-align: left; }
